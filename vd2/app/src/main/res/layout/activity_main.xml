@@ -23,7 +23,8 @@
             android:id="@+id/Edtso1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nhập số ở đây"
+            android:hint="Nhập số ở đây"
+            android:inputType="numberDecimal"
             android:textSize="15dp"
             android:textColor="@color/cardview_light_background"/>
     </LinearLayout>
@@ -45,7 +46,8 @@
             android:id="@+id/Edtso2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nhập số ở đây"
+            android:hint="Nhập số ở đây"
+            android:inputType="numberDecimal"
             android:layout_marginLeft="20dp"
             android:textSize="15dp"
             android:textColor="@color/cardview_light_background"/>
@@ -63,28 +65,32 @@
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"/>
+            android:text="+"
+            android:onClick="SuLyCong"/>
         <Button
             android:id="@+id/BtnTru"
 
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"/>
+            android:text="-"
+            android:onClick="SuLyTru"/>
         <Button
             android:id="@+id/BtnNhan"
 
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="*"/>
+            android:text="*"
+            android:onClick="SuLyNhan"/>
         <Button
             android:id="@+id/BtnChia"
 
             android:layout_margin="2dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="/"/>
+            android:text="/"
+            android:onClick="SuLyChia"/>
     </LinearLayout>
 
     <LinearLayout
@@ -103,9 +109,11 @@
             android:id="@+id/EdtKetQua"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="kết quả ở đây"
+            android:hint="Kết quả ở đây"
+            android:focusable="false"
             android:layout_marginLeft="20dp"
             android:textSize="15dp"
             android:textColor="@color/cardview_light_background"/>
-        
+
+    </LinearLayout>
 </LinearLayout>
